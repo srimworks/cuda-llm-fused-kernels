@@ -1,0 +1,97 @@
+{
+  "gpu_name": "Tesla T4",
+  "num_gpus": 2,
+  "compute_capability": "sm_75",
+  "cuda_version": "12.8",
+  "pytorch_version": "2.11.0+cu128",
+  "nvcc_compile_time_sec": 60.43,
+  "kernels": {
+    "fused_rmsnorm_swiglu_B32_D4096_fp16": {
+      "shape": [
+        32,
+        4096
+      ],
+      "dtype": "fp16",
+      "pytorch_eager_us": 163.96,
+      "custom_cuda_us": 10.92,
+      "speedup_x": 15.01,
+      "max_abs_error": 0.000122,
+      "numerical_parity_verified": true
+    },
+    "fused_rmsnorm_swiglu_B64_D5120_fp16": {
+      "shape": [
+        64,
+        5120
+      ],
+      "dtype": "fp16",
+      "pytorch_eager_us": 155.75,
+      "custom_cuda_us": 9.82,
+      "speedup_x": 15.866,
+      "max_abs_error": 0.000488,
+      "numerical_parity_verified": true
+    },
+    "fused_rmsnorm_swiglu_B128_D5120_fp16": {
+      "shape": [
+        128,
+        5120
+      ],
+      "dtype": "fp16",
+      "pytorch_eager_us": 213.64,
+      "custom_cuda_us": 27.87,
+      "speedup_x": 7.665,
+      "max_abs_error": 0.001953,
+      "numerical_parity_verified": true
+    },
+    "fused_rmsnorm_swiglu_B64_D5120_fp32": {
+      "shape": [
+        64,
+        5120
+      ],
+      "dtype": "fp32",
+      "pytorch_eager_us": 109.3,
+      "custom_cuda_us": 20.32,
+      "speedup_x": 5.38,
+      "max_abs_error": 2e-06,
+      "numerical_parity_verified": true
+    },
+    "fused_l2_cosine_M32_N128_D1024_fp32": {
+      "shape": [
+        32,
+        128,
+        1024
+      ],
+      "dtype": "fp32",
+      "pytorch_eager_us": 122.75,
+      "custom_cuda_us": 18.23,
+      "speedup_x": 6.733,
+      "max_abs_error": 0.0,
+      "numerical_parity_verified": true
+    },
+    "fused_l2_cosine_M64_N256_D1024_fp32": {
+      "shape": [
+        64,
+        256,
+        1024
+      ],
+      "dtype": "fp32",
+      "pytorch_eager_us": 127.85,
+      "custom_cuda_us": 82.51,
+      "speedup_x": 1.55,
+      "max_abs_error": 0.0,
+      "numerical_parity_verified": true
+    },
+    "fused_l2_cosine_M128_N512_D1024_fp32": {
+      "shape": [
+        128,
+        512,
+        1024
+      ],
+      "dtype": "fp32",
+      "pytorch_eager_us": 123.06,
+      "custom_cuda_us": 320.16,
+      "speedup_x": 0.384,
+      "max_abs_error": 0.0,
+      "numerical_parity_verified": true
+    }
+  }
+}
